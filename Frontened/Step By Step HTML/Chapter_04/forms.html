@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<style>
+    
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  h1 {
+      color: #333;
+      text-align: center;
+  }
+
+  form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+  }
+
+  div {
+      margin-bottom: 15px;
+  }
+
+  label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+  }
+
+  textarea {
+      resize: vertical;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+  }
+
+  th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+  th {
+      background-color: #007bff;
+      color: white;
+  }
+
+  tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  tr:hover {
+      background-color: #ddd;
+      transition: 0.3s;
+  }
+
+  input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+  button:hover {
+      background-color: #0056b3;
+  }
+</style>
+
+</style>
+<body>
+    <h1>Tables In HTML</h1>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name">
+        </div>
+        <div>
+            <label for="fname">Fathers name</label>
+            <input id="fname" type="text" placeholder="Fathers name">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter mobile">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password">
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input id="date" type="date">
+        </div>
+        <div>
+            <label for="time">Time</label>
+            <input id="time" type="time">
+        </div>
+        <div>
+            <!-- dropdown for gnder -->
+            <label for="gender">Gender</label>
+          <select name="gender" id="gender" required>
+            <!-- use require tag to get compulsary that input -->
+            <option value="" disabled selected>Select gender</option> 
+            <!-- diable selectt to diable  -->
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+          </select>
+          </div>
+          <div>
+            
+            <label for="subsciption">Subscription</label>
+            <label for="basic">Basic</label>
+            <input id="basic" type="radio" value="basic" name="subsciption"> 
+            <label for="premuim">Premuim</label>
+            <input id="premuim" type="radio" value="premuim" name="subsciption">
+            <label for="vip">Vip</label>
+            <input id="vip" type="radio" value="vip" name="subsciption">
+        </div>
+        <div>
+           
+            <input id="agreement" type="checkbox" >
+            <label for="agreement"> agree for term of condition</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+        <textarea id="comment" rows="2"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables in HTML</title>
+  </head>
+  <style>   
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border: 2px solid black;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  transition: 0.3s;
+}
+
+  </style>
+  <body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <!-- head of the table -->
+            <tr>
+              <th>Name</th>
+              <th>Profession</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- body of the table -->
+            <tr>
+              <td>Ahsan</td>
+              <td>Undergradute</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Alee</td>
+              <td>Pharma Manager</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Gull Talpur</td>
+              <td>Professor</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Ayaz Ali</td>
+              <td>Jobless</td>
+              <td>27</td>
+            </tr>
+            <tr>
+                <!-- The attributes of tables are rowspan and colspan -->
+                <td colspan="3">Thank you</td>
+            </tr>
+            <tr>
+                <td>Here is  </td>
+                <td colspan="2">White Space</td>
+            </tr>
+            <tr>
+                <td>rowspan</td> <!--Row hamsha neche wali span krega-->>
+<td rowspan="2">Hi There</td>
+            </tr>
+            <tr>
+                <td>Pakistan</td>
+                <td>Zindabad</td>
+            </tr>
+          </tbody>
+    </table>
+  </body>
+</html>

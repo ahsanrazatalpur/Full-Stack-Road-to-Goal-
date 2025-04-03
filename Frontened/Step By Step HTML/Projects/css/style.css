@@ -1,0 +1,177 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Header (Navbar) */
+header {
+    background: white;
+    padding: 10px 20px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 60px; /* Smaller Navbar */
+}
+
+/* Logo on the Left */
+header img {
+    width: 150px; /* Adjusted size */
+    height: auto;
+    margin-right: 700px;
+}
+
+/* Navbar List */
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push items to the right */
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e60073; /* Foodpanda Pink */
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #ff0080;
+}
+
+/* Main Section */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe6f2; /* Light pink background */
+    position: relative;
+    padding: 50px 20px;
+    margin-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Background Image in Bottom Right */
+main::after {
+    content: "";
+    background: url('/img/refresh-hero-home-pk.webp') no-repeat bottom right;
+    background-size: contain;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+}
+
+/* Main Heading */
+main p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e60073; /* Foodpanda Pink */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Search Input */
+input {
+    padding: 12px;
+    width: 280px;
+    border: 2px solid #e60073;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    transition: width 0.3s ease-in-out;
+}
+
+input:focus {
+    width: 320px;
+}
+
+/* Search Button */
+button {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff0080;
+}
+
+/* Footer */
+footer {
+    background-color: #e60073;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    ul {
+        flex-direction: row;
+        margin-left: 0;
+    }
+    
+    ul li {
+        margin: 0 10px;
+    }
+
+    main::after {
+        width: 200px;
+        height: 200px;
+    }
+}
