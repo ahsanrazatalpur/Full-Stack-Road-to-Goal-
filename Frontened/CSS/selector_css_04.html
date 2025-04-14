@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS -Selector</title>
+    <style>
+    p{  /* Selcting single-elemnet */
+        color: red;
+        background-color: yellow;
+    }
+    #DivElement{  /* targeting id selector */
+        color: blue;
+        background-color: pink;
+    }
+    .bgblue{ /* Accesing elemnt by class*/
+        background-color: blue;
+    }
+    #para{ /*Accesing id which having class also*/
+        background-color: black;
+        color: white;
+    }
+    
+    .first{  /*Accesing class which having id also*/
+        background-color: blue;
+        color: brown;
+    }
+    footer , h3{  /*Accesing group elemnt*/
+        background-color: aqua;
+    }
+    .ptag, .otag{ /*Accesing group of class*/
+        color: blue;
+        background-color: blueviolet;
+
+    }
+    #pid, #ppid{ /*accesing grouping of an ids*/
+        color: chartreuse;
+        background-color: black;
+    }
+    #h6hai , p{ /*we can also acces two different tag in grouping*/
+        background-color: rgb(226, 125, 43);
+        color: white;
+    }
+    p{
+        border: 2px solid black;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Selector in CSS</h1>
+    <!-- -> css selector are those which are used to find an element whose propert will <section>
+       (to help markup to select) 
+    -> Selctor make easy to target single or multiple markup element
+
+    mostly used:
+      1. CSS element selector (p)
+      2. CSS id selector (#id)
+      3. CSS class selector (.class)
+      4. CSS grouping selector (h1,p)(comma , used bw two elemnts)
+
+      -> ek element mn class and id dono ban skate  but zyda prefrence order id ko milega
+      (ager same elemnt ko id or class do aur dono se alag property do to id wali properties acces hugi)
+      -> id hum ek elemnt ke liye use kerte aur class buhat sare elemnt ko combine acees kerne ke liye banate
+      ek elemnt ke aander buhat se class ho skate ek class ke buhat elemnt hoskate per id ek hugi
+     --> 
+ <p class="bgblue">Lorem ipsum dolor sit amet consectetur adipisicing en alias ullam earum voluptatum minima? Quod deleniti nemo quisquam quia, impedit facere.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum recusandae provident dolore impedit, consectetur magnam aspernatur laboriosam laborum suscipit dicta laudantium v</p> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus corrupti molestiae consectetur porro unde illum corporis. Excepturi quae expedita laboriosam, inventore illo quos exercitationem placeat perspiciatis illum voluptate odi</p>
+<div>
+    <p id="DivElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, modi ducimus explicabo quis inventore </p>
+</div>
+<p id="para" class="first">This is a simple paragraph hhere it is</p>
+<h3>This is primary sub-heading</h3>
+<footer>This is footer</footer>
+<p class="ptag">this is for p tag</p>
+<p class="otag">this is for another p tag</p>
+<p id="pid">This is for id</p>
+<p id="ppid">this is for another is</p>
+<h6 id="h6hai">This is h6</h6>
+<p id="h6hai">this is to test same id</p>
+<p>This is p h6</p>
+
+</body>
+</html>

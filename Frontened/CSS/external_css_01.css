@@ -1,0 +1,10 @@
+h1{
+    color: red;
+}
+p{
+    color: hotpink;
+    background-color: blue;
+}
+h1,p{
+    font-size:larger;
+}

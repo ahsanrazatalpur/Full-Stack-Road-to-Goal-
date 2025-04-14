@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Modal</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(30, 105, 105);
+        }
+      .container {
+        background-color: pink;
+        border: 4px solid black;
+        padding: 5px; /*inside the border */
+        padding-left: 20px; /* padding to left */
+        padding-right: 20px; /* padding to right */
+        padding-top: 20px; /* padding to top */
+        padding-bottom: 20px; /* padding to bottom */
+        padding: 30px 40px; /*padding in left/right (x-axis) top/bottom (y-axis)*/
+        margin: 20px 30px 40px 50px; /*margin to top right bottom left (shorthand padding)*/
+        margin: 30px; /*outsider the border  */
+        margin-top: 30px; /* margin to top */
+        margin-bottom: 30px; /* margin to bottom */
+        margin-left: 30px; /* margin to left */
+        margin-right: 30px; /* margin to right */
+        margin: 20px 40px 40px 49px; /*margin to top right bootom left (shorthand margin)*/
+        margin: 20px 40px;/*margin in left/right (x-axis) top/bottom (y-axis)*/
+        width: 250px; /*Agre hum width aur height set kerte hai to ager hum margin padding kam zyada kerte hain to hamari width height b change hoajagi*/
+        /*ager hum chahter hain ki esa na ho to box-sizing:border-box; property use krege to width height change h hugi*/
+        border-radius: 23px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- padding is insider the border -->
+    <!-- margin is outside the border -->
+    <h1>Box modal</h1>
+    <div class="container">
+      <h3>This is a container</h3>
+      <p id="firstpara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, earum!
+        Accusamus, dolorum. Fugiat, dolores adipisci aspernatur autem laborum
+        doloribus soluta cum consequuntur, nulla magni, numquam ex recusandae ad
+        doloremque dolor.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is a container</h3>
+      <p id="secondpara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, earum!
+        Accusamus, dolorum. Fugiat, dolores adipisci aspernatur autem laborum
+        doloribus soluta cum consequuntur, nulla magni, numquam ex recusandae ad
+        doloremque dolor.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is a container</h3>
+      <p id="thirdpara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, earum!
+        Accusamus, dolorum. Fugiat, dolores adipisci aspernatur autem laborum
+        doloribus soluta cum consequuntur, nulla magni, numquam ex recusandae ad
+        doloremque dolor.
+      </p>
+    </div>
+  </body>
+</html>

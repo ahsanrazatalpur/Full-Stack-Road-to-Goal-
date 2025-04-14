@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sttyling in Button and Links</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 34px auto;
+            width: 666px;
+            padding: 10px;
+            
+        }
+        .btn{
+            background-color: rgb(75, 151, 60);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn:hover{
+            color: black;
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+            background-color: yellow;
+        }
+        a:visited{  /*this property will afect after link will be visited*/
+            color: blue;
+            background-color: brown;
+        }
+        a:active{  /*when we tap on it*/
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Styling</h1>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus blanditiis numquam ipsa est error iure, sequi laboriosam sint, et amet quia nihil suscipit ad incidunt adipisci aspernatur, ratione eaque totam.</p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>

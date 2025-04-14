@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmeer Plaza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid #ff758c;
+            border-radius: 6px;
+            outline: none;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button {
+            width: 100%;
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #ff5c77;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kashmeer Plaza</h1>
+        <p style="text-align:center; color:#666;">Enjoy your beautiful days here!</p>
+        
+        <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name">
+
+            <label for="fullname">Full-Name</label>
+            <input id="fullname" type="text" placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email">
+
+            <label for="mobile">Mobile</label>
+            <input id="mobile" type="tel" placeholder="Enter your mobile">
+
+            <label for="address">Address</label>
+            <input id="address" type="text" placeholder="Enter your address">
+
+            <label>Persons:</label>
+            <div class="radio-group">
+                <input id="person2" value="2" type="radio" name="quantity">
+                <label for="person2">2</label>
+                <input id="person5" value="5" type="radio" name="quantity">
+                <label for="person5">5</label>
+                <input id="person8" value="8" type="radio" name="quantity">
+                <label for="person8">8</label>
+            </div>
+
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="" disabled selected>Choose status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="services">
+                <label for="services">Agree to terms and services</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

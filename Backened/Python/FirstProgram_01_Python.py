@@ -1,0 +1,10 @@
+print("Hello World!") # print is funtion 
+print(5)
+print("Ahsan Raza",100)
+print(30 * 209)
+print(20 + 34)
+print(30 - 79)
+print(34 / 5)
+print(34 % 9)
+print("My name is Ahsan , Im trying to learn Python (my love ;)")
+print("The Sum of Two Number is : ",30 + 54)

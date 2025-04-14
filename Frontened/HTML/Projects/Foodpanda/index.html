@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Foodpanda - Enjoy Your Food</title>
+ <link rel="stylesheet" href="/css/style.css">
+ <script src="app.js"></script>
+ <style>
+ /* Quick CSS for styling the card and other elements */
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ }
+ header {
+ background-color: white;
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }
+ nav ul {
+ list-style-type: none;
+ display: flex;
+ gap: 15px; /* spacing between items */
+ }
+ nav a {
+ text-decoration: none;
+ color: pink; /* foodpanda-like color */
+ }
+ main {
+ padding: 20px;
+ text-align: center;
+ }
+ .delivery-card, .small-card {
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ padding: 20px;
+ margin: 20px auto;
+ max-width: 400px;
+ box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+ }
+ .small-card {
+ max-width: 300px; /* Smaller card size */
+ display: inline-block;
+ margin: 10px; /* Gap between small cards */
+ }
+ footer {
+ text-align: center;
+ padding: 10px;
+ background-color: #f1f1f1;
+ }
+ .card-container {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap; /* Allows wrapping of items */
+ }
+ h3 {
+ text-align: center; /* Center the heading */
+ margin: 20px 0; /* Space above and below the heading */
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <div>
+ <img src="/img/logo.png" alt="Foodpanda Logo">
+ </div>
+ <nav>
+ <ul>
+ <li><a href="">Home</a></li>
+ <li><a href="">About</a></li>
+ <li><a href="">Order Food</a></li>
+ <li><a href="">Contact Us</a></li>
+ <li><a href="">Sign-Up</a></li>
+ </ul>
+ </nav>
+ </header>
+ 
+ <main>
+ <section>
+ <p>Enjoy Your Food - Tastes Like Honey</p>
+ <div>
+ <input type="text" placeholder="Search for your favourite cuisine or dish">
+ <button type="search">Search</button>
+ </div>
+ </section>
+ 
+ <!-- Section for Small Cards -->
+ <section>
+ <div>
+ <h3>Explore Our Offers</h3> <!-- Centered heading -->
+ </div>
+ <div class="card-container">
+ <div class="small-card">
+  <h4>Pizza Specials</h4>
+  <p>Get a large pizza for the price of a medium!</p>
+ </div>
+ <div class="small-card">
+  <h4>Sushi Combo</h4>
+  <p>Buy one, get one free on select sushi rolls.</p>
+ </div>
+ <div class="small-card">
+  <h4>Burger Frenzy</h4>
+  <p>Try our famous burgers with fries for just $5!</p>
+ </div>
+ <div class="small-card">
+  <h4>Dessert Delights</h4>
+  <p>Get a free dessert with every order over $30.</p>
+ </div>
+ <div class="small-card">
+  <h4>Health Bowls</h4>
+  <p>Enjoy our nutritious bowls at 20% off today!</p>
+ </div>
+ </div>
+ </section>
+ </main>
+ 
+ <footer>
+ Copyright &copy; All Rights Reserved
+ </footer>
+</body>
+</html>

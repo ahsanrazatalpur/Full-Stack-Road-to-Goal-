@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment in CSS</title>
+</head>
+<style>
+
+
+    #container{
+        width: 900px;
+        background-color: blue;
+         margin: auto; /*  to center any thing x and y axis same margin by auto  */
+    
+
+
+    }
+
+    .item{
+        border: 4px solid black;
+        margin: 20px;
+        margin-left: 10px;
+        padding-left: 10px;
+        background-color: antiquewhite;
+
+    }
+    #fruit{
+        float: left; /*item left hojaega*/
+        width: 48px;
+        box-sizing: border-box;
+
+    }
+    
+    #stationary{
+        float: left; /*item left hojaega*/
+        width: 48px;
+        box-sizing: border-box;
+
+
+    }
+    #computer{
+        float: left; /*item left hojaega*/
+        width: 48px;
+        box-sizing: border-box;
+        clear: left;/*no right float element alow*/
+        text-align: center;
+
+        
+    }
+
+</style>
+<body>
+    <h1>Alignmnet in CSS</h1>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure voluptate est, asperiores, modi tempora placeat odit reprehenderit voluptatum quo quas! Vitae dolor accusantium praesentium, maxime laudantium molestiae culpa ea. </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure voluptate est, asperiores, modi tempora placeat odit reprehenderit voluptatum quo quas! Vitae dolor accusantium praesentium, maxime laudantium molestiae culpa ea. </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure voluptate est, asperiores, modi tempora placeat odit reprehenderit voluptatum quo quas! Vitae dolor accusantium praesentium, maxime laudantium molestiae culpa ea. </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
