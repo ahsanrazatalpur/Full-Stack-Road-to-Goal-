@@ -25,9 +25,28 @@
         font-weight: bold;
         letter-spacing: 1px;
       }
+      .navbar li a:hover{
+        color: brown;
+      }
       .search {
         float: right;
         padding: 12px 70px;
+        color: white;
+      
+      }
+      .navbar input{
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 3px 4px;
+        width: 150px;
+        font-weight: 100px;
+
+      }
+      #search{
+        width: 150px;
+        height: 20px;
+        letter-spacing: 1px;
+        font-size: larger;
       }
     </style>
   </head>
@@ -39,7 +58,9 @@
           <li><a href="">About</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Contact Us</a></li>
-          <button class="search">Search</button>
+<div class="search">
+  <input type="text" name="search" id="search" placeholder="Search  this website ">
+</div>
         </ul>
       </nav>
     </header>

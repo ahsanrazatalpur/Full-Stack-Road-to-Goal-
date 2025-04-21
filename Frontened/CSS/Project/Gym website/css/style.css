@@ -1,0 +1,46 @@
+/*CSS reset*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url("/img/bg.jpg");
+  color: white;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 18px;
+    
+}
+.left {
+  position: absolute;
+  display: inline-block;
+  border: 2px solid red;
+  left: 34px;
+  top: 20px;
+}
+.center {
+  border: 2px solid green;
+  display: block;
+  margin: 20px auto;
+  width: 35%;
+}
+.center ul {
+  list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 34px 23px;
+
+    
+
+  }
+.right {
+  position: absolute;
+  right: 34px;
+  top: 20px;
+  border: 2px solid yellow;
+  display: inline-block;
+}
