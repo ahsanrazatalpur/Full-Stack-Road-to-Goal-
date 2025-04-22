@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector in CSS</title>
+    <style>
+      /* Elemnet Selector */
+      div {
+        color: red;
+      }
+
+      /*Class Selector*/
+      .red {
+        background-color: red;
+      }
+
+      /* Id selector */
+      #green {
+        background-color: green;
+      }
+
+      /* Child selector */
+      div > p {
+        /*Direct child hona chye*/
+        background-color: yellow;
+      }
+
+      /* Decendent Selector */
+      div p {
+        /* div ke ander pe ho phir wo bhaly jiske bhi through hu div ka direct child na ho */
+        background-color: blue;
+      }
+
+      /* Universal selctor */
+      * {
+        /* select all our body */
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* Psuedo Selector */
+      a:visited {
+        color: yellow; /*If link is visited*/
+      }
+      a:link {
+        color: green; /*If link is not visited*/
+      }
+      a:active {
+        background-color: red; /*if tap on link*/
+      }
+      a:hover {
+        background-color: pink;
+      }
+      p:first-child {
+        /*jaha jaha p apne parent ka first child ho*/
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction in Css</h1>
+    <div class="one">
+      <p>Im first child</p>
+      <p>Im secoond child</p>
+    </div>
+    <div class="red">Im div</div>
+    <div>Im another div</div>
+    <div id="green">this is green Id</div>
+    <div>
+      <p>Im Para inside Div</p>
+    </div>
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+  </body>
+</html>

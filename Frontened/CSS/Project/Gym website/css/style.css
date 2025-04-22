@@ -5,13 +5,29 @@ body {
   background: url("/img/bg.jpg");
   color: white;
 }
+.logo{
+  width:30px;
+  height:25px;
+  margin-left:35px;
+  /*filter:invert(100%);*/
+}
+.brand{
+  text-align: center;
+}
 .navbar{
     display: inline-block;
+    width:550px;
 }
 .navbar li{
     display: inline-block;
     font-size: 18px;
+    font-weight: bold;
     
+}
+.navbar li a:hover, .navbar li a:active{
+  text-decoration:underline;
+  color:grey;
+  
 }
 .left {
   position: absolute;
@@ -24,7 +40,7 @@ body {
   border: 2px solid green;
   display: block;
   margin: 20px auto;
-  width: 35%;
+  width: 43%;
 }
 .center ul {
   list-style: none;
@@ -43,4 +59,19 @@ body {
   top: 20px;
   border: 2px solid yellow;
   display: inline-block;
+}
+.btn{
+  margin: 10px 6px;
+  width:100px;
+  height:30px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color:white;
+  background-color: black;
+  padding: 0px 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(41, 40, 40);
 }

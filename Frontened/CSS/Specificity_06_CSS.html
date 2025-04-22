@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity in CSS</title>
+    <style>
+      .red {
+        background-color: red;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .green {
+        background-color: green;
+      }
+      h1 {
+        background-color: blue;
+      }
+      [attri="para"] {
+        /*Attribute selector must written in square bracket*/
+        background-color: pink;
+        h1.para{   /*Specificity  = 10 + 1 = 11*/
+            background-color: beige;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- css has cascade algoritham that decide that which algoritham will set or not
+     has 4 rules
+     1. position : last position style apply(The order of appernece in same selecotor otherwise calculate specificity)
+     posotion only matter when selector are same and last one have most specificity
+     2. calculate specificity
+          1. first inline style applied 
+          2. id selector
+          3. class or attribute selector
+          4. element selector
+          5. universal selector
+     3. origin the order in which css apear and where its come from
+          if css comr from browser (user agent style sheet) by default browser . if we write style then it will overwrite useragent style sheet
+           and 
+           important!   it will overwrite inline CSS  
+           we can only overright INLINE css by important! keyword 
+
+           Specificity calculation 
+           universal selector                   0
+           element selector,psuedo selector     1
+           class selector ,attribute selector   10
+           id selector                          100
+           inline css                           1000
+           important!                           100000
+
+     -->
+    <h1 class="red purple green">CSS SPECIFICITY</h1>
+    <!-- what is attribute se;ectore -->
+    <p attri="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nulla!
+      Saepe at optio laudantium id. Corrupti, optio obcaecati! Minus obcaecati
+      quo aut consequatur nulla. Architecto quo earum nesciunt distinctio
+      facere.
+    </p>
+    <!-- we have to use selecotor having low specificity bcause we can easily overwrite it -->
+     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit amet pariatur id aperiam labore odio deserunt. Iusto minima molestias alias non beatae mollitia omnis atque architecto modi. Minus, perferendis?</p>
+  </body>
+</html>

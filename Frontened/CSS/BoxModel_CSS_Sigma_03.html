@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model In Css</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      div {
+        background-color: red;
+      }
+      .box {
+        background-color: pink;
+      }
+      .box1 {
+        color: yellow;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid blue;
+        height: 200px; /*if we give any alemnt height or wight then chrome will add extra height or width for padding and border*/
+        box-sizing: border-box; /*no extra width or height added original as content no extra padding and border added  
+            ab is property se border aur padding ki axtra width or height nh brege in sabko milake content ki original height hogi*/
+      }
+      .box2 {
+        color: red;
+        color: yellow;
+        padding: 10px;
+        margin: 35px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- all element are made from html element are box in Css  div,span,container
+    content -> padding -> marging 
+    -->
+    <div class="box box1">Im a Box 1</div>
+    <div class="box box2">Im a Box 2</div>
+    <!-- margin collab : iska matalab hai ki ager 2 container aps mn overlap ker rahe hai to jo zyda margin hai wo bs ek bar assign hu  -->
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font and Color In Css</title>
+    <style>
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        /* font-style: italic; */
+        font-style: oblique; /*change the style of font*/
+        font-weight: 400; /*change the weight / increase opacity of font*/
+        text-decoration: underline; /*change the style/design of font*/
+        font-size: 20px; /*Change the size of font*/
+        line-height: 30px; /*height bw two para  or line in prependicullaer*/
+        letter-spacing: 2px; /*space bw letter */
+      }
+      h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      h2 {
+        /* text-transform: capitalize; make word capital letter */
+        /* text-transform: lower; make  word small letter*/
+        text-decoration: underline;
+        text-decoration-color: red; /*color the decoration of text */
+        text-decoration-style: dotted; /*Style the text decoration*/
+        text-decoration-thickness: 23px; /*Adust the thicknes of text decoration*/
+        text-indent: 10px; /*text away from heading or indent area*/
+      }
+      .lorem {
+        text-overflow: ellipsis; /*Ager text box k bahir overflow ho toyeproperty lage*/
+        width: 145px;
+        border: 2px solid red;
+        overflow: hidden; /*ager content box ke bahir jae to content hide hojae*/
+        word-break: break-all; /*ager jagah hai to ada word oper ada nache brreak hojae*/
+        text-align: center; /*to center any text*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Fonts</h1>
+      <h2>about fonts</h2>
+      <p>This is paragraph for font</p>
+      <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor
+        adipisci pariatur distinctio eaque recusandae modi vero officia.
+        Voluptatum aspernatur ipsam nesciunt facere ea. Reprehenderit inventore
+        ea velit incidunt laboriosam?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+        consequatur aspernatur accusamus ex quis quasi sapiente non quam veniam
+        dolores ab minus facere odit, eos veritatis. Quam, ea necessitatibus!
+        Saepe, amet iure excepturi voluptatibus quidem accusamus assumenda quis
+        ut provident officiis enim itaque nobis velit.
+      </p>
+    </div>
+  </body>
+</html>
