@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            margin-top: 30px;
+            padding: 30px;
+            /* box box-shadow: h-offent v-offent blur spread color inset; */
+            /* h/v offset :determine the shadow horizental annd vertical position;
+            blur: the larger the value the blur tha ::shadow
+            spread : shrink the ::shadow
+            color: define the shadow col 
+            inset : make the shadow inner */
+            box-shadow: 5px 15px 20px red; /*H/V position   +blur      +spread     +color */
+        }
+        /* text-shadow */
+        .para{
+            margin-top:80px;
+            text-shadow:3px -1px 2px #f7db00;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- box Shadow : to give visually shadow to a content -->
+     <div class="box">Im a box</div>
+     <!-- TExt shadow -->
+      <div class="para">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus dolorem quisquam dolores. Nobis fugit eaque nulla quod, dolores sint recusandae exercitationem. Dolorem nihil dolore nesciunt repellat quasi voluptates quas quibusdam nisi voluptate eveniet?
+        </p>
+      </div>
+    
+</body>
+</html>

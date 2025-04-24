@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dispaly property in CSS</title>
+    <style>
+      /*if element is inline it doesn't axpect padding from top*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: blueviolet;
+        /* display: inline; to make block element inline */
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid red;
+        /*if we want to give block eleement top margin or padding 
+        it does't axepect we have to change its diplay proprety as display inline*/
+        display: inline-block;/*to give margin/padding from top and also use for width or g=height give*/
+        width: 334px; /*if ew want to set width/height we make inlne to inline-block*/
+        /* display: none; /*display will disapear space and element also dispear  eliminated* (show kuc nh huga per jagah lega)
+        visibility: hidden;/*eliment should disapear but itt occupy its space   dispaly iintake but content gaya hojaga*/
+         display: flex; /*to maae item center*/
+         display: inline-flex;  /*ek line mn center hojae*/
+         justify-content: center;
+
+      }
+      span {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a Box</div>
+    <span> Im good boy </span>
+    <span> here it is </span>
+    <div class="box">Im anootherbx 2</div>
+  </body>
+</html>

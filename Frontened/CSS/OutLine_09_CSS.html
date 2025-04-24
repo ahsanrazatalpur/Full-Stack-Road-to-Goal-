@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutLine In CSS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .para {
+        margin-top:150px;
+        outline: 2px solid #a90707; /*outline is not part of box-model*/
+        outline-offset: 90px; /*Outline away from content id doesnt work in border*/
+        /*Outline width cannot be change
+        if we use both border and outlier so when we change raduis of border the raduis of outlier
+         also adjusted as border otherwise it has no raduis property*/
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- outline doesn't take space and part of box model -->
+    <div class="para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        quasi quo laboriosam obcaecati vero iusto neque, esse quis, saepe
+        incidunt sed impedit illo. Repellat non consequatur debitis facere
+        consectetur corporis, sint voluptates quod cupiditate saepe provident
+        perspiciatis tenetur in ab quisquam similique neque, totam sed aperiam!
+        Optio distinctio architecto maxime.
+      </p>
+    </div>
+  </body>
+</html>
