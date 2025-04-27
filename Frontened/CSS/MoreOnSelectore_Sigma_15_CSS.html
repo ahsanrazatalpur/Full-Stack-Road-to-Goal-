@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On  CSS Selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{   /*we can also select just first  line of any para or element
+            background-color: green;
+        }
+         */
+         /* .boxes * {      /*to select all element in the box
+            background-color: blue;
+         } */
+         /* [data-color="primary"]{ /*attribute selector jaha data-color="primary" ho eaha ye property lgado 
+            background-color: pink;
+         } */
+         /*These all are psudo element*/
+         .box:nth-child(even){ /*ager nth child even number mn hai to ye property apply hu*/
+            background-color: red;
+         }
+         .boxes:nth-child(odd){
+            background-color: rgb(115, 177, 43);
+         }
+         .box:nth-last-child(1){       /*matlab neche se konsa number */
+            background-color: purple;
+         }
+         .boxes::before{
+            content: "Hey im good boy";/*element ko css ke through dynamic add kya ja ksta */
+         }
+         .boxes::after{ /*we inserted content on last through css dynamicallay*/
+            content: 'The End';
+            color: rgb(128, 0, 64);
+         }
+         ::selection{  /*jisko selct kero ye property ;ag jae*/
+            background-color: yelow;
+            color: rgb(0, 0, 0);
+         }
+         .box::first-letter{
+            background-color: peru;
+            font-size: 25px;
+         }
+         input::placeholder{
+            color: red;
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box">Hey I am a Box  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores sunt, eveniet nostrum nobis veritatis, explicabo recusandae laudantium facere voluptatem amet sed corporis fugit animi labore et unde ex natus ratione. Sit, dolores libero?</p> </div>
+    <div class="box">Hey I am a Box </div>
+    <div class="box" data-color = "primary">Hey I am a Box </div>
+    <div class="box">hey Im   a box </div>
+    <div class="box">hey Im   a box </div>
+    <div class="box">hey Im   a box </div>
+    <div class="box">hey Im   a box </div>
+    <div class="box">hey Im   a box </div>
+    <input type="text" placeholder="Type Your name here">
+    
+</body>
+</html>

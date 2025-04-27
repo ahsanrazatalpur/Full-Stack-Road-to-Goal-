@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable in Css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: var(--seccol);   /*to use color write var(---color)  */
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            padding: 15px;
+            font-size: var(--pad);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+        nav ul li:first-child{
+            --color:rgb(214, 214, 29);
+            background-color:var(--color);
+            
+            
+        }
+        nav ul li:nth-child(2){
+            --color:blue;
+            background-color: var(--color);
+        }
+        nav ul li:nth-child(3){
+            --color:rgb(230, 71, 97);
+            background-color: var(--color);
+
+        }
+        nav ul li{
+            --color:rgb(194, 31, 194);
+            background-color: var(--color);
+        }
+        :root{  /* :root   use this to make variable*/
+        --color: red; 
+        --pad:23px; /* use --color: and describe any color
+        --seccol:rgb(89, 192, 89);    /*these varable are global variavble everything in root in global varr*/
+        main div{
+            color:var(--seccol,blue)   /*use this to color any color*/
+            /*if use global var in any tag inside then it will be local variabble*/
+        }
+    }
+    </style>
+  </head>
+  <body>
+<!-- we can make variable for color and use it multiple time  by root psudo class  :root{} and alson givr any value
+two types of color 
+1 . global variabe make by :root and use in any container or element
+2. local variable make variable insede element or container and use on it same container
+use ,red   after -- color if color not found thenn use next one mentioned color    -->
+    <header>
+    <div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Feedback</li>
+        </ul>
+      </nav>
+      </header>
+    </div>
+    <main>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae voluptas ducimus est eius nobis et aut, neque numquam, alias nostrum officiis consequuntur labore sit placeat non dolor quibusdam repellendus ipsum deleniti expedita qui odio illum? Dolore quidem minus alias sapiente! Cupiditate veniam consequatur hic.
+        </div>
+    </main>
+  </body>
+</html>

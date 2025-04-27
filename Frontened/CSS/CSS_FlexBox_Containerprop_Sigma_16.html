@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox In CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        border: 2px solid black;
+        height: 70vh;
+        display: flex; /*now we use flex property by default it is row  remeber flex set on container*/
+        justify-content: center; /*to make item center  remen=mber set property on container   horizantaly set*/
+        align-items: center; /*verticaaly center the conatiner item*/
+        justify-content: flex-start; /*item flow in start posiition*/
+        justify-content: end; /*item flow in end position*/
+        justify-content: space-around; /*element k bch space ajaega*/
+        justify-content: space-between; /*bch mn space hogi start end mn nh hugi*/
+        justify-content: space-evenly; /*braber se space dedo elements ko*/
+        flex-direction: column;
+        flex-direction: column-reverse;
+        flex-direction: row;
+        flex-wrap: wrap; /*wrap if element overflow*/
+        align-content: center; /*to center multiplle line*/
+        justify-content: flex-start; /*to change the position to start in justifuy content*/
+        justify-content: flex-end;
+        flex-wrap: wrap-reverse; /*content wrap in reverse direction*/
+        flex-flow: row reverse;
+        /* gap: 30px; to craete gap bw element horizental and verticall     */
+        column-gap: 10px; /*to create col gap in the item   */
+        gap: 20px 30px; /*shorthand for   first for row gapp and secound for column gap      */
+      }
+
+      .item {
+        height: 32px;
+        width: 32px;
+        background-color: violet;
+        border: 2px solid black;
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rememn=ber flex property set on container not individual item 
+    item in flex box doesnot fow fro left to riight it flow in flex direction by default left to row
+there are tow type sof axix 
+1 . main axis 
+2. cross axis
+if flex direction row item flow in main axis and if item flow in col the main axis will be verticll (corss axis)
+to center the flex    
+for one line align item:center;           <--------------single line
+for multiple line aligncontent center;   <-------   multiple line
+-->
+    <main>
+      <div class="container">
+        <div class="item"></div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </main>
+  </body>
+</html>

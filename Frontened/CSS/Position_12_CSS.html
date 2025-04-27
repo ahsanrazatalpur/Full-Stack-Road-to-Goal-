@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position In CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        padding: 43px;
+        margin: 34px;
+        border: 2px solid black;
+   /*     position: relative;now its parents has position so it will change relative to its parent*/
+   position:relative;
+      }
+      .box {
+        height:433px;
+        width: 80vw;
+        border: 2px solid black;
+        padding: 3px;
+        margin: 4px;
+      }
+      .box1 {
+        background-color: red;
+        /* position: relative;
+        top: 80px; */
+        position: absolute; /*nearest positionth ancestor*/
+        top: 0%; /*no position anccecstor but last ancestor is HTML tag so it change its position relative to it  */
+      }
+      .box2 {
+        background-color: yellow;
+        /* position: relative;
+        top: 30px;
+        left: 20px; */
+        position: sticky; /*stick hojaega  for navbar */
+        top:0%;
+      }
+      .box3 {
+        background-color: brown;
+        /* position: relative;
+        z-index: 2; */
+        position: fixed; /*Itd position now fixed evenn at scrroll*/
+        bottom: 0px;
+        right: 4px;
+      }
+      .box4 {
+        background-color: purple;
+        position: relative;
+        bottom: 60px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- By default position static static mean top bottom z index nh lag sakte(jaha hai rahega koi aser nh huga)
+    1. static (By default)
+    2. Relative (may overlap    valid for one element or container (container apne hisab se position ko change krega )) 
+    3. fixed (its fixed doesnot change its position)
+    4. stiky (when it come it will stik on give position)
+     ager child absoulute hai no matter parent kya haii fixed , stiky etc wo parent ko follow krega 
+
+     transform filter or prospective  or innvert  phir b child parent ko follow kreaga they also parent as position 
+    
+    z-index(iske liye b postion relative / absolute hu )
+
+    -->
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3">This is an Add</div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>

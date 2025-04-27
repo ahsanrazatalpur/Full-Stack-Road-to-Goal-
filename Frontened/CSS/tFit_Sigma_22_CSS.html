@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object fit in CSS and position</title>
+    <style>
+      .container {
+        width: 488px;
+        height: 466px;
+        border: 2px solid black;
+        background-image: url("sample.jpg");
+        background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        background-position: top right; /*target some area of image*/
+        background-image: center center;
+        background-clip: content-box;
+
+
+      }
+      img {
+        width: 466px;
+        height: 488px;
+        /* object-fit: cover; /*cover width or height mention in img
+        object-fit: contain; image puri dikhaop container bhaly khali chordu
+        object-position: top right;mn decide keroga ki image ka konsa hisa kate
+        object-position: bottom left; left bootom se image kate 
+        object-fit: fill; /*container ko fill kerdo by defaut 
+        object-fit: scale-down;  oper se image kat jaegi
+        object-fit: none; reset 
+        object-position: 10px 10px;    x y se image move hojaegi*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="sample.jpg" alt="" /> -->
+    </div>
+  </body>
+</html>

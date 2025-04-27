@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(40deg); /*item rotate in 40 degreee*/
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(0.25turn);  turn 1 mean 1 bar rotate 0.5 mean 90 deg 
+            transform: rotateX(40deg);  /*transform in X axis 
+            transform: rotateZ(50deg); /*transfoem in y axis
+            transform: scale(2);  /*utna element bara huga 
+            transform: scaleX(2); /*item size increaese in x axis
+            transform: scaleY(3);/*item size increaese in y axis
+            transform: scale3d();/*3d transfoem */
+           /* transform: skew(5deg); item scrach feom top left and bootom right*/
+            /*skew doesnot effect on z axis*/
+            /* transform: translateX(34px); item itna px age jaega */
+            /* transform: translate(100%); item 1 guna age jaega */
+            /* transform: translateY(200%); */
+            /* transform: scale(0.2) translate(200%) skew(50deg); shorthand transform; */
+            /* transform: translate(-100px); use in navbar  */
+            transform-origin: 0px 0px; /*item start from 0 */
+            /*
+            scale x   act on left right
+            sclae y act on up down
+            scale act in all directuon
+            traslate x : act in x axis x ki tref right ki trf jaga
+            translate y: act in y axit  utne nache ki tref aiga
+            trasnle   act in both x and y act on bootom right edge 
+            
+            
+            
+            ;;            */
+
+        } 
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid #e90971;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Box</div></div>
+    
+</body>
+</html>

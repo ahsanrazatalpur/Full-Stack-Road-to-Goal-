@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            border: 2px solid yellow;
+            display: grid;
+            grid-template-columns: [pehla]120px [dusra]200px; /*i want 2 column one with 120px siz and other one foe 200px
+            now if i place itwm one item place in 1st col and other one on next col we xan overlap  item
+            we can also name to set propetry
+            */
+            grid-template-rows:100px 100px 100px ;
+        }
+        .item{
+            height: 55px;
+            width: 55px;
+            border: 2px solid #000;
+        }
+        .item-4{
+            grid-row: 1/2;/*to change specifi element 1/2 mean 1 se shroo hu 2 pe khatam hojae*/
+            grid-column: 1/2;
+        }
+        .item-1{
+            grid-row: 1/2; /*if we give 2 or more element same property they will be overlapped*/
+            grid-column: 1/2;
+            grid-row-start: 1; /*start row*/
+            grid-row-end:2;   /*end row*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1" >1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+    
+</body>
+</html>

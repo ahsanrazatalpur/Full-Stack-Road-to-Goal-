@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box -ELemental property</title>
+    <style>
+        .item{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .order5{
+            order: 10;
+            background-color: black;
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- properties
+    1. order :jiska order zyda wo last mn aiga default order 0
+    flex grow   jitni grow zyda wo utne items ki jagah lega by default 0
+flex shrin   abillity of item to shrink if necessary    ager zaroorat pre to element chota hojae  jiski jitni zyda wo utna jlee shrink hoga
+  3. align self : fllex end   itwm flex end pe chala jaega  jaha bologe chala jaega 
+-->
+
+    <div class="items">
+        <div class="item">1</div>
+        <div class="item order5">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    
+</body>
+</html>

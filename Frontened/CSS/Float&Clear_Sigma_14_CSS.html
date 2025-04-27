@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards{
+            border: 2px solid black;
+            margin-top: 20px;
+            display: flow-root; /*pehle img float ki vajah se conatiner s bahir horhi thi ab is property se nahin hugii*/
+        }
+        img{
+            width: 320px;
+            float: left; /*now img allow to conent on its right side*/
+            float: right;
+        }
+
+        .card{
+            border:2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: pink;
+            clear: right; /*iske right mn koi b element allow h hai */
+            clear: left;/*mere left pe koi b element allow na hu*/
+            clear: both;/*mere left and right pe koi b element allow na hu*/
+        }
+        
+
+    </style>
+</head>
+<body>
+<!-- bhla econtent zyda dal lo img k sath per  image float krege text katega nahin use in newspaper like web -->
+    <div class="cards">
+        <img src="sample.jpg" alt="">
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet mollitia, voluptate, ex reiciendis quidem sint harum nulla quae dolorum ipsum porro sapiente illum repellat cumque est ullam excepturi velit!</p>
+    </div>
+    <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam labore deserunt, hic facere eius ducimus mollitia doloremque, enim corrupti harum, perspiciatis asperiores dolorum sit recusandae nam architecto quisquam quod ab neque. Deserunt adipisci nam aut a sint vitae ex, necessitatibus dolore ut autem voluptatibus quod ratione atque quos explicabo aliquam? Blanditiis possimus quisquam perspiciatis in cum libero, est tenetur, eius iure necessitatibus obcaecati ipsum vitae molestiae minus esse reprehenderit amet reiciendis sunt beatae. At animi omnis quasi nesciunt magnam ullam expedita distinctio veniam velit sapiente quisquam similique ipsa maxime exercitationem minima minus repudiandae sed ea in, dolores assumenda quidem nobis quo placeat. Voluptates, laborum. Rem harum a ab voluptas debitis libero pariatur laudantium, vel obcaecati itaque ratione, omnis iusto quidem exercitationem. Quisquam corporis dignissimos error quasi? A unde ut, ratione veritatis voluptas reprehenderit sit fugit ipsa quas minima explicabo nobis autem ipsam veniam rerum atque quo corrupti? Veniam enim quae in voluptatem labore, consequatur ad nisi iure eum repudiandae ullam sequi doloribus, quos accusamus quidem itaque illo, molestias debitis corrupti aliquam a quaerat! Provident iure unde temporibus rerum nobis officiis eius, repellendus quisquam delectus, eos quos repudiandae, alias necessitatibus. Ea, dicta. Nobis perferendis nemo obcaecati vitae molestiae veniam inventore. Magni, quo totam. Laudantium excepturi harum, nostrum voluptatem consectetur esse, officia praesentium necessitatibus magni, soluta numquam nobis commodi beatae veritatis. Labore, quam aut ea voluptatibus adipisci repudiandae. Illo error dolorem rem! Ipsam a itaque, reprehenderit tempora cumque rem optio dolor facilis, repudiandae veniam quasi! Cum nulla architecto totam illum ad, repellat delectus nihil ratione quae deserunt. Exercitationem ducimus quia fugiat aut debitis aliquam tempora vero modi possimus neque. Eligendi ab tempora beatae saepe ex tempore blanditiis ea atque eveniet temporibus odit voluptatibus aperiam adipisci, odio suscipit sed dolorem possimus illo sit expedita quasi quibusdam. At ullam fuga libero voluptates quidem repellat ipsum voluptas hic nulla quas, ex est quasi error suscipit, exercitationem nostrum veniam natus ipsam. Architecto explicabo totam in enim eaque id a porro pariatur nesciunt ut debitis, expedita tempora tempore, odit quis?</div>
+    <div class="card">Card3</div>
+
+    
+</body>
+</html>

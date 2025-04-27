@@ -1,77 +1,56 @@
-/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  margin: 0px;
-  padding: 0px;
-  background: url("/img/bg.jpg");
-  color: white;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-.logo{
-  width:30px;
-  height:25px;
-  margin-left:35px;
-  /*filter:invert(100%);*/
-}
-.brand{
-  text-align: center;
-}
-.navbar{
-    display: inline-block;
-    width:550px;
-}
-.navbar li{
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    
-}
-.navbar li a:hover, .navbar li a:active{
-  text-decoration:underline;
-  color:grey;
-  
-}
-.left {
-  position: absolute;
-  display: inline-block;
-  border: 2px solid red;
-  left: 34px;
-  top: 20px;
-}
-.center {
-  border: 2px solid green;
-  display: block;
-  margin: 20px auto;
-  width: 43%;
-}
-.center ul {
+nav ul {
   list-style: none;
+  display: flex;
+  padding: 24px;
+  justify-content: center;
 }
-.navbar li a{
-    text-decoration: none;
-    color: white;
-    padding: 34px 23px;
-
-    
-
-  }
-.right {
+nav ul a {
+  color: var(--fontcolor);
+  text-decoration: none;
+  padding: 23px;
+  font-size: 23px;
+}
+.brand {
+  color: var(--fontcolor);
+  font-size: 32px;
   position: absolute;
-  right: 34px;
-  top: 20px;
-  border: 2px solid yellow;
-  display: inline-block;
+  left: 45px;
 }
-.btn{
-  margin: 10px 6px;
-  width:100px;
-  height:30px;
-  letter-spacing: 1px;
-  font-size: 13px;
-  color:white;
-  background-color: black;
-  padding: 0px 1px;
-  border-radius: 10px;
-  cursor: pointer;
+span {
+  font-size: 33px;
+  color: yellow;
 }
-.btn:hover{
-  background-color: rgb(41, 40, 40);
+/* button {
+  position: absolute;
+  right: 37px;
+  padding: 5px;
+  margin: 3px;
+} */
+ .button{
+  /* position: absolute; */
+   right:44px;
+
+ }
+ .btn{
+  margin:3px 6px;
+  
+ }
+ 
+nav ul a:hover{
+  color: rgb(230, 230, 112);
+
+}
+:root {
+  --fontcolor: white;
+  --primarycolor: black;
 }

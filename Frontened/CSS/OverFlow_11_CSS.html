@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overflow In Css</title>
     <style>
-   /* *{
+      /* *{
        margin: 0;
     padding: 0;
    }    */
-   .box{
-    width: 20vw;
-    height: 20vh;
-    margin-top: 180px;
-    margin-left: 150px;
-    outline: 5px solid red ;
-    overflow: scroll;
-    white-space:nowrap;
-   }  
-
+      .box {
+        width: 20vw;
+        height: 20vh;
+        margin-top: 180px;
+        margin-left: 150px;
+        outline: 5px solid red;
+        overflow: scroll;
+        white-space: nowrap; /*All content placed in horizentallay*/
+        text-overflow: ellipsis; /*the extra conta shown as ...*/
+        overflow: clip; /*scroll line also disapear*/
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow: hidden scroll; /*overflow hidden on x and scroll on y    shorthand*/
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- two way to set overflow condition
     1. overflow:scroll   :> scroll bar will be created
     2. overflow:auto     :>  if content overflow from container then automaticaly  -->
-    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, ducimus perferendis? Deleniti modi dicta odio quis consequuntur perspiciatis quaerat nisi minima expedita quas inventore consectetur optio a, temporibus ea, doloremque fugiat! Vel natus tenetur commodi ducimus nam ratione temporibus quidem. Ipsum sint quos commodi eligendi.</div>
-    
-</body>
+    <div class="box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, ducimus
+      perferendis? Deleniti modi dicta odio quis consequuntur perspiciatis
+      quaerat nisi minima expedita quas inventore consectetur optio a,
+      temporibus ea, doloremque fugiat! Vel natus tenetur commodi ducimus nam
+      ratione temporibus quidem. Ipsum sint quos commodi eligendi.
+    </div>
+  </body>
 </html>

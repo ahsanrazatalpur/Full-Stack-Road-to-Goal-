@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        #brand{
+            font-size: 32px;
+            font-weight: bolder;
+            margin-right: 187px;
+            color: black;
+        }
+        nav ul li{
+            text-decoration: none;
+            color:rgba(0,0,0,0.5);
+            padding: 23px;
+            font-size: 18px;
+            
+        }
+        #name{
+            font-size: 32px;
+            font-weight: bolder;
+            color: black;
+        }
+        .container{
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: column;
+            align-items: center;
+        }
+        #primary-font{
+            font-size: 35px;
+        }
+        p{
+            width: 600px;
+            text-align: center;
+            font-size: 18px;
+            color: rgba(0,0,0,0.8);
+            
+        }
+        .btn{
+            background-color: rgb(15, 169, 230);
+            color: white;
+            padding: 9px 16px;
+            margin-top: 17px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><li id="brand">UltraEdit</li>
+                <li>products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p id="primary-font">Download <span id="name">UltraEdit </span>for Windows</p> <br>
+            <div>
+                <p>Lorem ipsum dolor sit amet, ore nihil voluptatum possimus facepedit adipisce. Beatae inventore odit natus et accusanti</p>
+            </div>
+             <div>
+             <button class="btn">DOWNLOAD MAC OR LINUX VERSION</button>
+            </div> 
+           
+
+    </main>
+</body>
+</html>
