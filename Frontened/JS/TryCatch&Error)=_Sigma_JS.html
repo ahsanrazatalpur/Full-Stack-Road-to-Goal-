@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch And Error</title>
+</head>
+
+<body>
+    <!-- parseInt(variable /value) it is function in JS to change datatype 
+    
+    
+    throw = mean error ajae to apna custom error throw kero
+    try   = mean try to run this code ager run hojae to sahi nh to catch run hu
+    catch = ager try mn error agya to catch run hoga per code nh rukarga just indicate krega 
+    ager function acronous hai to catch kam nh krega  
+    -->
+
+
+    <script>
+        let number = prompt("Enter a Number")
+        let Secnumber = prompt("Enter a Second Number")
+        if (isNaN(number) || isNaN(Secnumber)) {
+            throw SyntaxError("This is not valid input please try integer")
+        }
+        let sum = parseInt(number) + parseInt(Secnumber);
+        console.log(typeof (sum))
+
+
+
+
+        // try catch islye use kerte ager by chnace koi error ajae to code wahi na ruk jae bas humen indicate kerde ki yaha error h
+        try {
+
+            console.log("The Sum of two number is:", sum + b)// try to execute this line
+        } catch (error) {
+            console.log("Error");
+
+        }
+        finally {// ye finally kam ata functions mn ager function mn return kerte hai to neche ka code nh chalta per finnaly chlta h
+            console.log("Filed closed")
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

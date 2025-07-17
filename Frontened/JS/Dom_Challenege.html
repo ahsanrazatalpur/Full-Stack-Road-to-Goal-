@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Dom Challenge</title>
+    <style>
+        .box{
+            margin: 34px;
+            padding: 34px;
+            height: 34px;
+            width: 34px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<!-- Exercise  = create 5 box and give them randomn color through DOM -->
+<body>
+    <div class="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+        <div id="box5" class="box">Box 5</div>
+    </div>
+
+    <script>
+document.getElementById("box1").style.backgroundColor = "red"
+document.getElementById("box2").style.backgroundColor = "green"
+document.getElementById("box3").style.backgroundColor = "pink"
+document.getElementById("box4").style.backgroundColor = "yellow"
+document.getElementById("box5").style.backgroundColor = "orange"
+
+    </script>
+</body>
+</html>

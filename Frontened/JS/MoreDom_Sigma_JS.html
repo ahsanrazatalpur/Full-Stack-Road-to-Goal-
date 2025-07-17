@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Dom</title>
+</head>
+<style>
+    .box{
+        height: 34px;
+        width: 34px;
+        border: 3px solid black;
+        padding: 34px;
+        margin: 34px;
+
+    }
+</style>
+<body>
+    <Div class="container">
+     <div class="box">Ahsan Raza 1</div>
+     <div class="box">Ahsan Raza 1.5</div>
+     <div class="box">Ahsan Raza 2</div>
+     <div class="box">Ahsan Raza 2.5</div>
+     <div class="box" id = bg_red>Ahsan Raza 3</div>
+     <div class="box">Ahsan Raza 4</div>
+     <div class="box">Ahsan Raza 5</div>
+    </Div>
+
+    <script>
+        console.log('Ahsan');
+
+        let boxes = document.getElementsByClassName("box")
+        console.log(boxes)
+
+        // boxes[2].style.backgroundColor="red"
+
+        document.getElementById('bg_red').style.backgroundColor = 'red'
+
+        // quary selector only first element of class can be targeted 
+        //rememn=ber in quary selector first element of class target and we use .box bc we use css selector here
+        document.querySelector('.box').style.backgroundColor='green'
+
+        // if we wanna target all then use querySelectorAll Caution ! have to use for each loop
+        document.querySelectorAll('.box').forEach(e =>{e.style.backgroundColor='blue'})
+        
+        //byTagName
+        document.getElementsByTagName('div').style.backgroundColor='pink'
+        
+        //match by css property
+        a = document.getElementsByTagName('div')
+        a[4].matches('redbox')
+        
+
+        a[4].closes('container')
+
+
+
+    </script>
+</body>
+</html>

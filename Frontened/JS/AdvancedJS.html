@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        // Topic 1 Run await without async function through IIFE Function
+
+        // async function Sleep(){
+        //     return new Promise((resolve, reject)=>{
+        //         setTimeout(()=>{
+        //         resolve(45);
+        //         },1000);
+
+        //     }
+        // )}
+        // (async function main(){ //IIFE(imediately invoke function expression) this function is to run await without async function 
+            
+        //     let b = await Sleep();
+        //     console.log(b)
+        //     let a = await Sleep();
+        //     console.log(a)
+
+        // })()
+
+        // topic 1 end
+
+//-----------------------------------------------------------------------------------------------------------
+// Topic 2 Destructuring
+
+// let x,y = [1,2]; // undefined , 1, 2
+// console.log(x,y)
+
+// to solve this isssue we make variable in array
+// let [a,b]=[1,2,3]; // 3 will be garbage value bc there no variable to hold 3
+// console.log(a,b);
+
+// // if we have limited variable and more values then wew writw aas ...rest then all remaining value will hold by rest variabl
+
+//  let[num1,num2,...rest] =[1,2,3,4,5,6,7];
+//  console.log(num1,num2,rest)
+
+
+//in object
+let obj = {
+    a : 1,
+    b : 2,
+    c : 3,
+}
+console.log(obj)
+let {a,b} = obj; // to get the value of a and b from an object
+console.log(a,b) 
+
+function Sum(a,b,c){
+    return a+b+c
+}
+let arr = [1,2,3]
+console.log(arr[0]+arr[1]+arr[2]);  // way to sum an array all are same
+console.log(Sum(arr[0],arr[1],arr[2]))
+console.log(Sum(...arr))
+
+
+//-----------------------------------------------------------------------------------------------------------
+
+var a1 = 6; // iski declaretion top mn hogi aager hum oper a1 likhe to error nh aigia khali undefined aiga qki a1 ki decaleretion
+// oper chalegai  and value nache reh per ye sirf usi function ke lye qki wo wha local variable ha dusre function mn error dega
+//  eg   oper a1   necher  = 6 this is called hoisting ye function ke liye b hai var function fun k oper b call hoskta
+
+// ye sirf var mn hoga let aur const mn error aiga
+
+
+
+
+</script>
+
+</body>
+</html>

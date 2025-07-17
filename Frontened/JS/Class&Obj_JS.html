@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Object</title>
+
+</head>
+<body>
+    <!-- Object Oriented Programing
+        . not for beginer project
+        . mostly used in complex project
+        
+        
+
+    Oop work also acheive in functional programming but the difference is that in oop wee make real world object (template)
+
+    class is template / blueprint of an object (empty form is like a class )
+    object (filled form is like a object )
+
+     Js object has special property called protoype that is either null or refrence anoter  object
+        -->
+<script>
+
+    // let obj = {
+    //     name: "Ahsan",
+    //     age: 20
+    // }
+    // console.log(obj)
+
+    // let animal = {
+    //     eats : true
+    // }
+    // let rabits = {
+    //     jumps : true
+    // }
+    // rabits._proto_=animal; // set rabbits .[[prototype]] = animal
+
+    class Animal{
+        constructor(){
+            console.log("Object is craeted")
+        }
+        eats(){
+            console.log("Kha Rha hu...")
+        }
+        jump(){
+            console.log("Jump ker rha hu")
+        }
+    }
+    let a = new Animal("Bunny");
+    console.log(a);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS IN JS</title>
+</head>
+<body>
+    <!-- // click one single click
+    // dblclick two click(double click) 
+    contextmenu  (when we right click on it)
+    -->
+
+    <div class="container">
+        <button id="box">Im a Box</button>
+        <button id="btn">Click me</button>
+        <button id="content">Change Content</button>
+    </div>
+    
+    <script>
+        button = document.getElementById("btn");
+        button.addEventListener("dblclick", ()=>{alert("Hi there")});
+
+        box_contents = document.getElementById("box");
+        box_contents.addEventListener("dblclick",()=>{alert("You have one box")});
+
+
+        box_contents.addEventListener("contextmenu",()=>{alert("Sir, please dont press right click")});
+        
+        box_contents.addEventListener("keydown",(e)=>{console.log(e.key ,e.keycode)});
+
+        
+
+        
+    </script>
+</body>
+</html>

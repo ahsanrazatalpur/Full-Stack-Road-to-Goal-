@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Bubbling in JS</title>
+    <style>
+    .container{
+        margin: 34px;
+        padding: 34px;
+        background-color: rgb(211, 111, 34);
+        border: 2px solid black;
+        cursor: all-scroll;
+        
+    }
+    .child_container{
+        margin: 34px;
+        padding: 34px;
+        background-color: rgb(224, 81, 186);
+        border: 2px solid black;
+        
+    }
+    .child{
+        margin: 34px;
+        padding: 34px;
+        background-color: rgb(93, 231, 75);
+        border: 2px solid black;
+
+    }
+    </style>
+</head>
+<body>
+    <div id="container" class="container"> Im a container
+        <div id="child_container" class="child_container"> im child_container
+            <div id="child" class="child">Im child</div>
+        </div>
+    </div>
+    <script>
+        container = document.getElementById("container")
+        container.addEventListener("click",()=>{alert("Im a Container")})
+    
+        child_container = document.getElementById("child_container")
+        child_container.addEventListener("click",()=>{alert("Im a Child_Container")})
+    
+        child = document.getElementById("child")
+        child.addEventListener("click",()=>{alert("Im a Child")})
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating Card using JS</title>
+    <style>
+        .conatiner {
+            background-color: brown;
+        }
+
+        .card {
+            display: flex;
+            background-color: rgb(41, 40, 40);
+            width: 700px;
+            height: 121px;
+            padding-top: 10px;
+            border-radius: 5px;
+
+        }
+
+        .image img {
+
+            width: 188px;
+            height: 112px;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        .heading{
+            padding: 0px 10px;
+    margin-left: -4px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+}
+        
+        
+        .tail {
+            padding: 0px 10px;
+    margin-left: -4px;
+    color: white;
+}
+        
+    </style>
+</head>
+
+<body>
+  
+    </div>
+
+
+    <script>
+        function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+            let viewStr
+            if (views < 100000){
+
+                viewStr = viewa/1000+ "K";
+                
+            }
+            else if(views  > 1000000){
+                viewStr = viewa/1000000+ "M";
+                
+            }
+            else{
+                 viewStr = viewa/1000000+ "M";
+
+            }
+            let html = `
+  <div class="container">
+    <div class="card">
+      <div class="image"><img src="${thumbnail}"alt=""></div>
+      <div class="text">
+        <p> ${title}</p>
+        <p> ${cName}. ${viewStr}. ${monthsOld}</p>
+      </div>
+    </div>
+  </div>
+`;
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing and Adding Element By DOM in JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-createdBy="Ahsan">Im a box</div>
+        <div class="box">Im a box</div>
+    </div>
+    
+    <script>
+    document.querySelector(".box").innerHTML // box ki HTML mil jargi console pe
+    document.querySelector(".container").innerHTML // container ki HTML mil jaegi console pe
+    document.querySelector(".container").outerHTML // container ki HTML mil jaegi outer tag ke sath console pe
+    document.querySelector(".container").innerText // container ki Text mil jaegi console pe
+    document.querySelector(".container").tagName // container ki tag  name  eg .Div mil jaegi console pe(aplicable for tag only)
+    document.querySelector(".container").NodeName // container ki Node name  eg .Div mil jaegi console pe(aplicable for every node)
+    document.querySelector(".container").textContent // container ki text ncontent  emil jaegi 
+    document.querySelector(".container").hidden// ager element hidden hua to true else false
+    document.querySelector(".container").hidden = true// element ko hidden banadega 
+    document.querySelector(".container").innerHTML = "any content" //kisi b element ki inner html change ker sakte
+    document.querySelector(".container").hasAttribute("style") //ager style atribute higa to true nh to false
+    document.querySelector(".container").getAttribute("style") // kya style lga wo retuen krega
+    document.querySelector(".container").setAttribute("style", "display :inline") // style set huga
+    document.querySelector(".container").Attributes // attribute return krega 
+    document.querySelector(".container").removeAttribute("style") // attribute remove krega 
+    
+    // tech crunh web command = "document.designMode = "on" ab web ki=o temporory design ker sakta
+    
+    // can add attribute like data-createdBy = "Any name" store ninfo
+    
+    document.querySelector(".container").dataset   // data info dega ager ec data-creatd by AHsan
+   // document.querySelector(".container").data-conceptby="any name"  // data info dega ager ec data-creatd by AHsan
+
+   let div = document.createElement("Div"); // koi element create ker sksate ese
+   div.inserHTML = "im a box"
+   div.setAttribute("class", "created");
+   document.querySelector(".container").append(div) // div ko container class mn add kero last mn add hoga
+
+   // 1.   node.append()  last mn add krega
+   // 2.   node.prepand() 
+   // 3.   node.before()  add before node
+   // 4.   node.after()   add after node
+   // 5.   node.replacewieth()
+
+   // if i have HTML or string
+//    1. beforebegin
+//    2. afterbegin 
+//    3. beforeend
+//    4. afterend
+
+
+//   .remove() to remove element  in node
+// classlist retrun the list of all classes
+// className retrun the name(value) of all classes
+
+// classlist.add("AhsanClass") to add class(if we add same class multiple time only one time class will be added)
+
+// classlist.toggle("AhsanClass") khula hai to bnd kerdo bnd hai to kholdo(class lagi to to hat jaegi nh hai to  lg jaegi)
+
+
+
+
+
+   
+
+   
+
+
+    
+    </script>
+</body>
+</html>

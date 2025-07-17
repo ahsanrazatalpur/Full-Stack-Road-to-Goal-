@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback and promises</title>
+</head>
+<body>
+
+  <!-- synchronous nature means usi time run hojae   jedse console.log()
+  Asynchronous nature(JS bad ke liye tal deta bhally 0 sec hu)  mean delay hoke run hu jese settime function -->
+<!-- 
+
+    <script>
+console.log("Ahsan is a hacker");
+console.log("Zain is a hecker");
+
+// time out function  mean delay our execution 
+setTimeout(()=>{console.log("Hey im in time function")},2000);
+setTimeout(() =>{console.log("Ahsan here")},5000)
+setTimeout(()=>{alert("Hi there Im 3 Sec Delay")},3000)
+
+console.log("The End")
+
+// callback
+const LoadScript = (scr, callback)=>{
+    let sc = document.createElement("script");
+    sc.src = src;
+
+}
+
+
+    </script> -->
+
+    <!-- callback By apna College -->
+
+ <!-- callback : A callback is a function or arguemenet which we passed on another function -->
+  
+   <script>
+      // function Sum(a, b){
+        // console.log(a+b);
+    //   }
+    //   function Calculator(a,b,SumCallback){ -->
+    //     SumCallback(a,b);
+    //   }
+    //   Calculator(5,7,Sum)
+
+
+    //   function Hello(){
+    //     console.log("Hello")
+    //   }
+    //   setTimeout(Hello,3000)// SetTimeout also like a function because we pass argue inside argue
+
+    // //   Callback Hell : Nested callback stacked below one another make a pyramid
+    // function Data(dataSet,Dataid){
+    //     console.log(dataSet,Dataid)
+    // }
+
+
+// function getData(dataId,getNextData){ //2s delay
+// setTimeout(()=>{console.log("data",dataId);
+// if(getNextData){
+// getNextData()
+// }
+// },2000);
+// }
+
+// // we wamt our data like in sequence data 1,2,3
+// //data 1
+// //data 2
+// // //data 3
+// // getData(1) //2s
+// // getData(2) //2s
+// // getData(3) //2s
+
+// // we want our data with individual dalayy so we use callbcak
+// getData(1,()=>{
+//   getData(2)
+//  getData(2,(()=>{
+//   getData(3)
+//   getData(3,(()=>{
+//     getData(4)
+//   }))
+//  }))
+// });
+
+
+
+  // function getBio(getData,getID,getNextData){
+  //   setTimeout(()=>{
+  //     console.log(getData,getID)
+  //     if(getNextData){
+  //       getNextData();
+  //     }
+  //   },2000);
+  //   getBio(1,()=>{
+  //     getBio(2);
+  //   })
+  // }
+
+
+
+   
+  // Promises (to solve callback hell)
+  // promises in JS for eventual completetion of task its an object in JS it to solve callbcak hell
+  // There are three states of promises
+
+     // 1. Pending state( no result)
+     // 2. Fullfill(resolved)
+     // 3. Reject
+
+  // let promise = new Promise((resolve, reject)=>{
+  //     console.log("Im a promise");
+  //    // resolve("Succes");
+  //    reject("Error occured please resolve it")
+  // })
+
+  // resolve and reject are callback provided by JS
+
+  // geting real example like getting data from an API
+  // function getData(dataId, getNextData){
+  //   return new Promise((resolve , reject)=>{
+  //     setTimeout(()=>{
+  //       console.log("data",dataId)
+  //       resolve("success")
+  //    if(getNextData){
+  //     getNextData();
+  //    }
+  //     },5000);
+      
+  //   });
+  // }
+
+
+// To use promise 
+// fullfill    ->   promise.then
+// error       ->   promise.catch
+
+// const getPromise =()=>{
+// return new Promise((resolve,reject) =>{
+//   console.log("Im a promise")
+//  // resolve("succes")
+//  reject("error");
+ 
+// })
+// }
+
+// let promise = getPromise();
+// promise.then((res)=>{
+// console.log("promise fullfilled",res)
+
+// // })
+// // promise.catch((err)=>{
+// //   console.log("rejected",err)
+// // })
+
+// function AsyncFun(){
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//      console.log("data1")
+//      resolve("succes")
+//     },2000)
+
+//   })
+// }
+
+// function AsyncFun2(){
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//      console.log("data1")
+//      resolve("succes")
+//     },2000)
+
+//   })
+// }
+
+// console.log("fetching data1..");
+// let p1 = AsyncFun();
+// p1.then((res) =>{
+//   console.log(res)
+//   console.log("fetching data2..");
+//   let p2 = AsyncFun2();
+//   p2.then((res)=>{
+//     console.log(res)
+//   })
+  
+// })
+
+// ----practe=ice
+// let promise = new Promise((resolve,reject)=>{
+//   //console.log("Im a promise")
+//   //resolve("Success");
+//  // reject("Error")
+// // })
+
+
+
+// function getData(getId, getNextData){
+//   return new promise(resolve ,reject)={
+//   setTimeout(()=>{
+//   console.log(getId);
+//   resolve("succes");
+//   if (getNextData){
+//     getNextData();
+//   }
+//   },5000)
+// });
+  
+// }
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

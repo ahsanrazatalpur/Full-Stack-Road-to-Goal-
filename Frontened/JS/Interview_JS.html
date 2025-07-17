@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question Of JavaScript</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // Qno 1   Megical Sorting halt
+      
+        let students = ["Ali","HammadTalpurrr","Gull","AyazALi","Ahsan","Mehd","SarimKhan","Zainuabdin"]
+        let houses = []
+
+        for (const student of students) {
+            if(student.length < 2){
+                houses.push("GrayFinder");
+            }
+            else if(student.length < 4){
+                houses.push("HufflePuff");
+            }
+            else if(student.length <6){
+                houses.push("RavenClae");
+            }
+            else{
+                houses.push("SlayThrin");
+                
+            }
+            
+        }
+      console.log(houses)
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+
+    <style>
+.child{
+    background-color: blue;
+    padding: 34px;
+    border: 2px solid black;
+    margin: 34px;
+    cursor: pointer;
+}
+.child_container{
+    background-color: pink;
+    padding: 34px;
+    border: 2px solid black;
+    margin: 34px;
+    cursor: pointer;
+}
+.container{
+    padding: 34px;
+    border: 2px solid black;
+    margin: 34px;
+    cursor: pointer;
+    background-color: red;
+}
+    </style>
+
+</head>
+<body>
+    <!-- event bubbling mean mene ek container banaya > unske ander child container banaya > uske  ander ek aur 
+     child banya to ab ager mn child pe click keruga to container aur chil container automatically click hojaege qki child 
+     child container andd contaioner ke ander hai
+     
+     if we dont want bubbling then we use (e) object and use method e.stopPropagation()
+     -->
+    <div class="container">
+        <div class="child_container">
+            <div class="child">Im a Child</div>
+        </div>
+    </div>
+
+    <script>
+        child = document.querySelector(".child")
+        child.addEventListener("click", (e) => {e.stopPropagation()
+             alert("you have click child element") })
+
+
+        child_container = document.querySelector(".child_container")
+        child_container.addEventListener("click", (e)=>{e.stopPropagation()
+            alert("you have clicked child container")})
+
+        container = document.querySelector(".container")
+        container = addEventListener("click",(e)=>{e.stopPropagation()
+            alert("you have click container")})
+    </script>
+</body>
+
+</html>

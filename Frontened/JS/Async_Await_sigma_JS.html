@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await</title>
+</head>
+<body>
+
+<!-- Synchronus mean we we write code in sequence like code 1, code 2 and code 3 these code will execute in sequence 1,2,3
+each code wait for previous code to complete execution 
+<script>
+    console.log("One");
+    console.log("Two");
+    console.log("Three");
+</script>
+-->
+
+<!-- 2. Asynchronous mean we have code 1 , code 2 , api code , code 3 if in these execution run if the one of the like an api might 
+br delay for few sec so we dont stop execute and wait our below called we just and skip the delay instruction and will run
+on the last 
+<script>
+    console.log("Hello")
+    
+    function Hello(){
+        console.log("Im hello in the setTime function")
+    }
+    setTimeout(Hello,3000)//These instruction are delay for 3 sec so print in the last
+    
+    console.log("The End")
+</script>
+-->
+
+<script>
+    //Async-Await
+// these two are keyword that make asynchronous simple
+//async function Myfun(){} //async always return promises
+
+// async function Hello(){//This function automatically return promise
+//   console.log("Hellow,world");
+// }
+
+// // await (jaha function ko call krege wha function mn await likhege to wo jub tak promise settle nh hita tab tak age code ko
+// // hold krega)
+
+// // or to pause the exxecution of surrounding async function(function who return promise) until promise is settle
+// // we cant use await normaly we use it in the async function
+
+// function api(){
+//     return new Promise((resolve, reject)=>{
+//        setTimeout(()=>{
+//          console.log("weather API");
+//         resolve(200)
+//        },2000)
+//     })
+// }
+// async function getAPI(){
+//     await api();
+//     await api();
+// }
+
+function getName(){
+    return new Promise((resolve ,reject)=>{
+        setTimeout(()=>{
+        console.log("Ahsan Raza");
+        console.log("Hi There");
+        resolve("Succes")
+        },5000)
+    })
+    }
+    
+async function getData(){
+    await getName();
+    await getName();
+}
+
+
+
+</script>
+
+    
+
+</body>
+</html>
